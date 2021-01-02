@@ -1,0 +1,40 @@
+@model ChatModel
+
+@{
+    ViewData["Title"] = "Chat Page";
+}
+
+<section class="text-center">
+    <h3> Chat con ASP.NET Core SignalR .NET </h3>
+</section>
+
+<section class="card mb-3 p-4">
+    <h5 class="card-title text-center">Bienvenido </h5>
+    <form method="POST" class="card-body">
+        <div class="mb-3">
+            <label for="msg" class="form-label">Usuario</label>
+            <input class="form-control" name="user" id="userInput"></input>
+            <label for="msg" class="form-label">Mensaje</label>
+            <input class="form-control" name="message" id="messageInput"></input>
+        </div>
+        <button type="submit" class="btn btn-primary" id="SendMessageBtn">Enviar</button>
+
+    </form>
+    <hr />
+    <div class="card-body">
+        <label for="msg" class="form-label">Adjuntar Archivo</label>
+        <input type="file" class="form-control btn btn-outline-secondary p-1 " />
+        <button type="submit" class="btn btn-secondary mt-3" id="SendMessageBtn">Enviar Archivo</button>
+    </div>
+
+</section>
+
+<section class="card">
+    <h5 class="card-title text-center">Buzón de mensajes </h5>
+
+    <ul id="messagesList"></ul>
+
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/3.1.7/signalr.min.js"></script>
+<script src="~/js/site.js"></script>
