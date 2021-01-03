@@ -11,9 +11,9 @@ namespace CHAT_DOTNET_CRISATNO_LASSO_VACA.Controllers
 {
     public class ChatController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<ChatController> _logger;
 
-        public ChatController(ILogger<HomeController> logger)
+        public ChatController(ILogger<ChatController> logger)
         {
             _logger = logger;
         }
