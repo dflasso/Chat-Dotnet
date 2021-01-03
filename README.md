@@ -17,4 +17,4 @@ Run the following commands:
 [ASP.NET Core SignalR JavaScript client](https://docs.microsoft.com/en-us/aspnet/core/signalr/javascript-client?view=aspnetcore-5.0)
 
 ## Blog
-(Dany Lasso) [https://dflasso.github.io/]
+[Dany Lasso](https://dflasso.github.io/)
